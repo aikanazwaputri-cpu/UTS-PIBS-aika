@@ -1,0 +1,236 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profil Aika Nazwa Putri | Aika</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="header">
+    <div class="profile">
+        <div class="avatar">
+            <img src="images/foto aika 2.jpeg" alt="Foto Profil Aika Nazwa Putri">
+        </div>
+        <div class="profile-text">
+            <p class="eyebrow">WEBSITE PROFIL PRIBADI</p>
+            <h1>Aika Nazwa Putri</h1>
+            <p>Mahasiswa Sistem Informasi</p>
+            <p>Universitas Pembangunan Jaya</p>
+        </div>
+    </div>
+</header>
+
+<nav class="navigation">
+    <button class="active" onclick="tampil('biodata', this)">Biodata</button>
+    <button onclick="tampil('pendidikan', this)">Pendidikan</button>
+    <button onclick="tampil('pengalaman', this)">Pengalaman</button>
+    <button onclick="tampil('keahlian', this)">Keahlian</button>
+    <button onclick="tampil('publikasi', this)">Publikasi</button>
+    <button onclick="tampil('kontak', this)">Kontak</button>
+</nav>
+
+<section class="content" id="content">
+    <p class="section-label">01 / ABOUT ME</p>
+    <h2>Biodata</h2>
+    <p>Halo! Saya Aika Nazwa Putri, mahasiswa Program Studi Sistem Informasi dengan NIM 2025081015 di Universitas Pembangunan Jaya.</p>
+    <p>Saya tertarik mempelajari teknologi, pengembangan website, dan komunikasi.</p>
+
+    <div class="info-grid">
+        <article class="info-card">
+            <h3>Nama</h3>
+            <p>Aika Nazwa Putri</p>
+        </article>
+        <article class="info-card">
+            <h3>Program Studi</h3>
+            <p>Sistem Informasi</p>
+        </article>
+        <article class="info-card">
+            <h3>Universitas</h3>
+            <p>Universitas Pembangunan Jaya</p>
+        </article>
+    </div>
+</section>
+
+<aside class="rightbar">
+    <p class="section-label">MY INTERESTS</p>
+    <h2>Hobi</h2>
+    <ul>
+        <li>Collecting toys</li>
+        <li>Listening to music</li>
+        <li>Watching movies</li>
+    </ul>
+</aside>
+
+<footer class="footer">
+    <div class="footer-social">
+        <p>Twitter: @akun</p>
+        <p>FB: @akun</p>
+        <p>Instagram: aikaaputrii</p>
+    </div>
+
+    <div class="footer-copyright">
+        <p>&copy; Copyright 2026. All Rights Reserved</p>
+    </div>
+
+    <div class="footer-brand">
+        <h3>Aika</h3>
+        <p>Website Profil Pribadi</p>
+    </div>
+</footer>
+
+<script>
+const halamanWeb = {
+    biodata: `
+        <p class="section-label">01 / ABOUT ME</p>
+        <h2>Biodata</h2>
+        <p>Halo! Saya Aika Nazwa Putri, mahasiswa Program Studi Sistem Informasi dengan NIM 2025081015 di Universitas Pembangunan Jaya.</p>
+        <p>Saya tertarik mempelajari teknologi, pengembangan website, dan komunikasi.</p>
+
+        <div class="info-grid">
+            <article class="info-card">
+                <h3>Nama</h3>
+                <p>Aika Nazwa Putri</p>
+            </article>
+            <article class="info-card">
+                <h3>Program Studi</h3>
+                <p>Sistem Informasi</p>
+            </article>
+            <article class="info-card">
+                <h3>Universitas</h3>
+                <p>Universitas Pembangunan Jaya</p>
+            </article>
+        </div>`,
+
+    pendidikan: `
+        <p class="section-label">02 / EDUCATION</p>
+        <h2>Pendidikan</h2>
+
+        <article class="info-card">
+            <h3>Universitas Pembangunan Jaya</h3>
+            <p>Program Studi Sistem Informasi</p>
+            <p>2025 - sekarang</p>
+        </article>
+
+        <article class="info-card">
+            <h3>SMA Kartika XI Jakarta</h3>
+            <p>Sekolah Menengah Atas</p>
+            <p>Tahun lulus: 2025</p>
+        </article>
+
+        <article class="info-card">
+            <h3>Sekolah Menengah Pertama</h3>
+            <p>SMP Cendrawasih</p>
+            <p>Tahun lulus: 2022</p>
+        </article>
+
+        <article class="info-card">
+            <h3>Sekolah Dasar</h3>
+            <p>SD Al-Azhar 17 Bintaro</p>
+            <p>Tahun lulus: 2019</p>
+        </article>`,
+
+    pengalaman: `
+        <p class="section-label">03 / EXPERIENCE</p>
+        <h2>Pengalaman</h2>
+
+        <article class="info-card">
+            <h3>HIMASIF</h3>
+            <p>Divisi Hubungan Masyarakat (Humas)</p>
+            <p>Membantu publikasi informasi, menyampaikan pengumuman, dan mendukung koordinasi kegiatan.</p>
+        </article>
+
+        <article class="info-card">
+            <h3>PROGATH</h3>
+            <p>Koordinator Hubungan Masyarakat</p>
+            <p>Membantu koordinasi tim Humas dan penyampaian informasi kegiatan.</p>
+        </article>
+
+        <article class="info-card">
+            <h3>Organisasi Sekolah</h3>
+            <p>Sekretaris Kelas</p>
+            <p>Membantu mencatat dan menyampaikan informasi kepada teman-teman.</p>
+        </article>`,
+
+    keahlian: `
+        <p class="section-label">04 / SKILLS</p>
+        <h2>Keahlian</h2>
+
+        <div class="info-grid">
+            <article class="info-card">
+                <h3>HTML</h3>
+                <p>Memahami dasar pembuatan halaman website.</p>
+            </article>
+            <article class="info-card">
+                <h3>CSS</h3>
+                <p>Memahami dasar pengaturan tampilan website.</p>
+            </article>
+            <article class="info-card">
+                <h3>Komunikasi</h3>
+                <p>Menyampaikan informasi dengan baik.</p>
+            </article>
+            <article class="info-card">
+                <h3>Kerja Sama Tim</h3>
+                <p>Berkoordinasi dalam kegiatan kelompok.</p>
+            </article>
+        </div>`,
+
+    publikasi: `
+        <p class="section-label">05 / PUBLICATIONS</p>
+        <h2>Publikasi & Sertifikat</h2>
+        <p>Berikut adalah sertifikat yang saya miliki.</p>
+
+        <div class="sertifikat-grid">
+            <article class="sertifikat-card">
+                <img src="images/sertif coursera 1.jpg" alt="Sertifikat 1">
+                <h3>Sertifikat 1</h3>
+            </article>
+            <article class="sertifikat-card">
+                <img src="images/sertif coursera 2.jpg" alt="Sertifikat 2">
+                <h3>Sertifikat 2</h3>
+            </article>
+            <article class="sertifikat-card">
+                <img src="images/sertif coursera 3.jpg" alt="Sertifikat 3">
+                <h3>Sertifikat 3</h3>
+            </article>
+            <article class="sertifikat-card">
+                <img src="images/sertif coursera 4.jpg" alt="Sertifikat 4">
+                <h3>Sertifikat 4</h3>
+            </article>
+        </div>`,
+
+    kontak: `
+        <p class="section-label">06 / CONTACT</p>
+        <h2>Kontak</h2>
+
+        <article class="info-card">
+            <h3>Email</h3>
+            <p>aika.nazwa.putri@gmail.com</p>
+        </article>
+
+        <article class="info-card">
+            <h3>Instagram</h3>
+            <p>@aikaaputrii</p>
+        </article>
+
+        <article class="info-card">
+            <h3>LinkedIn</h3>
+            <p>Tambahkan tautan LinkedIn kamu.</p>
+        </article>`
+};
+
+function tampil(halaman, tombol) {
+    document.getElementById("content").innerHTML = halamanWeb[halaman];
+
+    document.querySelectorAll(".navigation button").forEach(btn => {
+        btn.classList.remove("active");
+    });
+
+    tombol.classList.add("active");
+}
+</script>
+
+</body>
+</html>
