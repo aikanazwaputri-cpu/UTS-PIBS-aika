@@ -1,4 +1,4 @@
-css
+
 * {
     box-sizing: border-box;
 }
@@ -28,6 +28,7 @@ body {
     padding: 32px;
     background: #E9DEDA;
     color: #48121D;
+    position: relative;
 }
 
 .profile {
@@ -80,23 +81,21 @@ body {
     margin-top: 0;
 }
 
-header {
-    position: relative;
-}
-
+/* LOGO UPJ DAN HIMASIF */
 .logo-kanan {
     position: absolute;
     top: 15px;
     right: 20px;
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 8px;
     z-index: 10;
 }
 
 .logo-kanan img {
-    width: 48px;
-    height: 48px;
+    display: block;
+    width: 35px;
+    height: 35px;
     object-fit: contain;
     border-radius: 50%;
     background: white;
@@ -332,6 +331,18 @@ header {
     .content,
     .rightbar {
         padding: 20px;
+    }
+
+    /* Logo tetap kecil di HP */
+    .logo-kanan {
+        top: 10px;
+        right: 12px;
+        gap: 6px;
+    }
+
+    .logo-kanan img {
+        width: 30px;
+        height: 30px;
     }
 
     .profile {
